@@ -15,7 +15,7 @@ while true
   t.show
   x,y = input
   break if x =~ /q|(exit)|(quit)/ 
-  t.select x.to_i,y.to_i
+  t.select (x.to_i-1),(y.to_i-1)
   n += 1
 end
 t.result
